@@ -1,0 +1,33 @@
+body {
+    background-color: aqua;
+    color: black;
+}
+header{
+   background-color: black;
+   color: azure;
+}
+nav{
+background-color: black;
+color: azure;
+text-align: left;
+
+}
+section{
+    h2{
+        color:white;
+        text-align: center;
+
+    }
+}
+article{
+    h2{
+        color:white;
+        text-align: center;
+
+    }
+}
+footer{
+    background-color: black;
+    color: azure;
+    
+}
