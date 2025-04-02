@@ -5,7 +5,98 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>HTML Tags</title>
-  <link rel="stylesheet" href="styles.css" />
+  <style>
+    /* Universal Selector */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: Arial, sans-serif;
+    }
+
+    /* Type Selector */
+    body {
+      background-color: #f4f4f4;
+      color: #333;
+      padding: 20px;
+    }
+
+    h1, h2, h3 {
+      text-align: center;
+    }
+
+    /* ID Selector */
+    #Home {
+      background-color: #ffcc00;
+      padding: 20px;
+      border-radius: 10px;
+    }
+
+    #About {
+      background-color: #cce5ff;
+      padding: 20px;
+      border-radius: 10px;
+    }
+
+    #contact {
+      background-color: #d4edda;
+      padding: 20px;
+      border-radius: 10px;
+    }
+
+    /* Class Selector */
+    .highlight {
+      color: red;
+      font-weight: bold;
+    }
+
+    /* Descendant Selector */
+    nav a {
+      text-decoration: none;
+      color: blue;
+      margin: 0 10px;
+    }
+
+    /* Child Selector */
+    aside > ul {
+      list-style-type: square;
+    }
+
+    /* Adjacent Sibling Selector */
+    h2 + p {
+      font-style: italic;
+    }
+
+    /* General Sibling Selector */
+    h2 ~ p {
+      color: darkblue;
+    }
+
+    /* Attribute Selector */
+    a[href*="ultimez"] {
+      color: green;
+      font-weight: bold;
+    }
+
+    /* Pseudo-Class Selectors */
+    a:hover {
+      color: red;
+    }
+
+    li:first-child {
+      font-weight: bold;
+    }
+
+    li:last-child {
+      font-style: italic;
+    }
+
+    /* Pseudo-Element Selectors */
+    p::first-letter {
+      font-size: 1.5em;
+      color: darkred;
+    }
+  </style>
 </head>
 
 <body>
@@ -21,7 +112,7 @@
   <main>
     <section id="Home">
       <h2>Let’s Build the Future Together </h2>
-      <p>A Team of Innovators, Elevating Your Business Growth with Digital Solutions.</p>
+      <p class="highlight">A Team of Innovators, Elevating Your Business Growth with Digital Solutions.</p>
     </section>
 
     <article id="About">
@@ -36,7 +127,7 @@
     <aside>
       <h3>Related Articles</h3>
       <ul>
-        <li><a href="https://ultimez.com/solutions/designing">designing</a></li>
+        <li><a href="https://ultimez.com/solutions/designing">Designing</a></li>
         <li><a href="https://ultimez.com/solutions/developing">Developing</a></li>
       </ul>
     </aside>
@@ -47,15 +138,15 @@
     </section>
   </main>
 
-<br>
+  <br>
 
   <footer>
     <section id="contact">
         <h1>Contact Us</h1>
         <ul>
-            <li>Contct No:-0000000000</li>
+            <li>Contact No:- 0000000000</li>
             <li>Email:- Ultimez@gmail.com </li>
-            <li>Adress:- 4th floor, Meenaxi Complex, No -C3, opposite Reliance Fresh, Deshpande Nagar, Hubballi, Karnataka 580029</li>
+            <li>Address:- 4th floor, Meenaxi Complex, No -C3, opposite Reliance Fresh, Deshpande Nagar, Hubballi, Karnataka 580029</li>
         </ul>
     </section>
   </footer>
