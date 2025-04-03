@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Lists with Styled Text</title>
+    <style>
+        /* Different Font Styles */
+        h1 {
+            font-family: Arial, sans-serif;
+            color: navy;
+            text-align: center;
+        }
+        h2 {
+            font-family: "Times New Roman", serif;
+            color: darkred;
+        }
+        ul, ol {
+            font-family: "Courier New", monospace;
+            font-size: 18px;
+        }
+        /* Different Text Colors */
+        ul li {
+            color: green;
+        }
+        ol li {
+            color: blue;
+        }
+        ul li ul li, ol li ol li {
+            color: darkorange;
+        }
+        /* Different Font Declaration Types */
+        .font1 {
+            font-family: Verdana, sans-serif;
+            font-weight: bold;
+            color: purple;
+        }
+        .font2 {
+            font-family: "Georgia", serif;
+            font-style: italic;
+            color: brown;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>HTML Lists with Styled Text</h1>
+
+    <!-- Unordered List -->
+    <h2>Unordered List of Fruits</h2>
+    <ul>
+        <li class="font1">Apple</li>
+        <li class="font2">Banana</li>
+        <li>Grapes</li>
+        <li>Mango</li>
+        <li>Orange</li>
+    </ul>
+
+    <!-- Ordered List -->
+    <h2>Ordered List of Programming Languages</h2>
+    <ol>
+        <li class="font1">Python</li>
+        <li class="font2">JavaScript</li>
+        <li>C++</li>
+        <li>Java</li>
+        <li>Swift</li>
+    </ol>
+
+    <!-- Unordered List with Nested List -->
+    <h2>Unordered List of Web Technologies</h2>
+    <ul>
+        <li class="font1">Frontend
+            <ul>
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>JavaScript</li>
+            </ul>
+        </li>
+        <li class="font2">Backend
+            <ul>
+                <li>Node.js</li>
+                <li>PHP</li>
+                <li>Django</li>
+            </ul>
+        </li>
+    </ul>
+
+    <!-- Ordered List with Nested List -->
+    <h2>Ordered List of Steps to Create a Website</h2>
+    <ol>
+        <li>Plan the Website</li>
+        <li>Design the Layout</li>
+        <li class="font1">Develop the Website
+            <ol>
+                <li>Write HTML</li>
+                <li>Style with CSS</li>
+                <li>Add JavaScript</li>
+            </ol>
+        </li>
+        <li class="font2">Test and Deploy</li>
+    </ol>
+
+</body>
+</html>
