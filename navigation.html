@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Navigation and Overflow Task</title>
+  <style>
+    .horizontal-menu ul {
+      list-style: none;
+      padding: 0;
+      display: flex;
+      background: #333;
+    }
+    .horizontal-menu li {
+      padding: 10px 20px;
+      color: white;
+    }
+
+    .vertical-menu ul {
+      list-style: none;
+      padding: 0;
+      background: #444;
+      width: 200px;
+    }
+    .vertical-menu li {
+      padding: 10px;
+      color: white;
+    }
+
+    .dropdown-menu {
+      position: relative;
+      display: inline-block;
+    }
+    .dropdown-menu-content {
+      display: none;
+      position: absolute;
+      background-color: #f9f9f9;
+      min-width: 160px;
+      box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+      z-index: 1;
+    }
+    .dropdown-menu:hover .dropdown-menu-content {
+      display: block;
+    }
+
+    .overflow-container {
+      width: 200px;
+      height: 100px;
+      overflow: auto;
+      border: 1px solid #000;
+    }
+
+    .overflow-text {
+      width: 200px;
+      height: 50px;
+      overflow: hidden;
+      border: 1px solid red;
+    }
+
+    .overflow-image-container {
+      width: 150px;
+      height: 100px;
+      overflow: hidden;
+      border: 1px solid blue;
+    }
+    .overflow-image-container img {
+      width: 300px;
+      height: auto;
+    }
+
+    .dropdown-overflow {
+      width: 150px;
+      height: 100px;
+      overflow-y: auto;
+      border: 1px solid green;
+    }
+    .inline-block-example div {
+      display: inline-block;
+      width: 100px;
+      height: 100px;
+      margin: 5px;
+      background-color: coral;
+    }
+  </style>
+</head>
+<body>
+  <h2>Horizontal Menu</h2>
+  <nav class="horizontal-menu">
+    <ul>
+      <li>Home</li>
+      <li>About</li>
+      <li>Services</li>
+      <li>Contact</li>
+    </ul>
+  </nav>
+
+  <h2>Vertical Menu</h2>
+  <nav class="vertical-menu">
+    <ul>
+      <li>Dashboard</li>
+      <li>Profile</li>
+      <li>Settings</li>
+      <li>Logout</li>
+    </ul>
+  </nav>
+
+  <h2>Dropdown Menu</h2>
+  <div class="dropdown-menu">
+    <span>Hover Me</span>
+    <div class="dropdown-menu-content">
+      <p>Link 1</p>
+      <p>Link 2</p>
+      <p>Link 3</p>
+    </div>
+  </div>
+
+  <h2>Responsive Navigation Menu</h2>
+  <div class="responsive-menu"> Menu</div>
+
+  <h2>Overflow in a Container</h2>
+  <div class="overflow-container">
+    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec venenatis vulputate lorem. Morbi nec metus. Nulla facilisi.
+  </div>
+
+  <h2>Overflow in a Text Block</h2>
+  <div class="overflow-text">
+    This is some very long text that will overflow the block because we are restricting height and width.
+  </div>
+
+  <h2>Overflow in an Image</h2>
+  <div class="overflow-image-container">
+    <img src="../notes/font css.png" alt="Overflow Image">
+  </div>
+
+  <h2>Overflow in a Dropdown Menu</h2>
+  <div class="dropdown-overflow">
+    <p>Item 1</p>
+    <p>Item 2</p>
+    <p>Item 3</p>
+    <p>Item 4</p>
+    <p>Item 5</p>
+    <p>Item 6</p>
+  </div>
+
+  <h2>Inline-block Examples</h2>
+  <div class="inline-block-example">
+    <div>hello</div>
+    <div>good </div>
+    <div> morning</div>
+  </div>
+</body>
+</html>
